@@ -17,6 +17,6 @@ The stock predictions are made form machine learning AI. I have used quandl (www
 
 ## What I learned
 
-- [x] PHP
+- [x] PHP and basic backend dev
 - [x] Python 
 - [x] basics in : panda, quandel numpy, sklearn, matplotlib  
