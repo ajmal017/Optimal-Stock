@@ -1,0 +1,85 @@
+___________________________
+Pseudo Code for Optimal Stock
+___________________________
+
+----------------------------
+
+login and sign up:
+
+
+conect to server
+
+get user info (login)
+
+sqlInfo = get info database
+
+//hashing
+salt = randNr from(sqlInfo)
+
+randomNr = salt / stringlength(Pw)
+
+PwHasht = hashing(Pw)
+
+
+if Pw = PwHasht
+  change header to index
+
+if Pw != PwHasht
+  print wrong ID or Pw
+
+----------------------------
+
+AI.php:
+
+choose AI type
+
+run Ai.py
+
+read from middleMan.txt
+
+print to page
+
+----------------------------
+
+Ai.py:
+
+import lib
+
+get data from quandl
+
+get Adj. Close
+
+take test.sample
+
+scaling and preprocessing
+set up X for graph
+set up Y
+
+cross validation X & Y, 20%
+
+classefire
+algortim LinearRegression
+
+check accuracy
+
+predict forecast
+
+matplotlib stuff for graph
+
+for loop (add date to forecast_data)
+
+write to middleMan.txt
+
+----------------------------
+
+Chose insustris: 
+
+(in py)
+re format data from frame to multi demantional array
+write to RiskLvl_industri_X file with forcast in an array
+
+(in php)
+read from RiskLvl_industri_X.txt
+out put new data
+
+----------------------------

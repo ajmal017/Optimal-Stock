@@ -1,0 +1,396 @@
+/*
+color theme
+dark grey blue : #1e3f62
+orenge : #ff8533
+white : #ffffff
+white gray : #f2f2f2
+lhigt red : #ff4d4d
+turkose : #00cc99
+
+#c3d5d5
+
+font famlis
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    font-family: 'Exo 2', sans-serif;
+
+
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2d5986;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+
+}
+
+li a:hover:not(.active) {
+    background-color: #ff6666;
+}
+
+.active {
+    background-color: #00b38f;
+}
+#StartImg{
+  /* https://static.pexels.com/photos/305203/pexels-photo-305203.png */
+  background-color: #336699;
+  min-height: 424px;
+
+}
+#mainBut{
+  padding: 4% 25%;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 170%;
+}
+h2{
+  font-family: 'Nova Flat', cursive;
+  color: #ffffff;
+}
+#main-text{
+  font-family: 'Exo 2', sans-serif;
+  color: #ffffff;
+}
+.mainOne{
+  position: absolute;
+  top: 80px;
+  left: 20%;
+
+}
+#IconImgForMain{
+    position: absolute;
+    top: 80px;
+    right: 10%;
+
+}
+.main{
+
+}
+
+/* */
+
+#ExtremImg{
+  width: 15%;
+  height: auto;
+  position: absolute;
+  right: 10%;
+}
+#simpleMoneyImg{
+  width: 10%;
+  height: auto;
+  position: absolute;
+  left: 10%;
+
+}
+#MidMoneyImg{
+  width: 10%;
+  height: auto;
+  position: absolute;
+  left: 45%;
+
+}
+#moneyImg{
+  width: 60%;
+  height: auto;
+
+}
+/* Text style */
+p{
+  font-family: 'Exo 2', sans-serif;
+}
+h3{
+  font-family: 'Exo 2', sans-serif;
+}
+h4{
+  font-family: 'Exo 2', sans-serif;
+}
+h5{
+  font-family: 'Exo 2', sans-serif;
+}
+#chouseBut{
+  padding: 4% 25%;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 170%;
+
+}
+.LeftSidePanel{
+  position: relative;
+  background-color: #ffffff;
+  width: 70%;
+  float: right;
+  right: 5%;
+
+}
+.rightPanel{
+  position: relative;
+  background-color: #ffffff;
+  width: 20%;
+  float: left;
+
+}
+
+
+/* jsfiddle.net for statistics  */
+ #container {
+    width: 90%;
+    height: 35em;
+    margin: 0;
+    padding: 0;
+
+}
+#LiveStockQuotes{
+  position: relative;
+  float: right;
+  right: 5%;
+}
+
+
+/*Login */
+#login{
+  background-color: #004466;
+  position: absolute;
+  margin: auto;
+  width: 30%;
+  height: 30%;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+}
+/* Login sign-up v1*/
+.inputLogin{
+  color: #ff8000;
+  position: absolute;
+  margin: auto;
+  top: 5%;
+  left: 30%;
+  font-size: 1.5vw;
+  font-size: 2vh;
+  width: 100%;
+  height: 100%;
+
+}
+
+.breadText{
+  font-family: 'Exo 2', sans-serif;
+  color: #404040;
+  font-size: 110%;
+
+}
+
+.breadTextHeadLine{
+  font-family: 'Nova Flat', cursive;
+  color: #404040;
+
+}
+#startButII{
+  padding: 1% 10%;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 170%;
+}
+.h2II{
+  padding: 1% 10%;
+  font-family: 'Exo 2', sans-serif;
+  color: #000000;
+}
+#drop{
+
+  width: 20%;
+}
+
+
+/* Sosialmedia */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+
+/* portfoloio  */
+
+.MainPanel{
+  position: relative;
+  background-color: #ffffff;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  bottom: 1%;
+
+}
+#BuyAndSellBtn{
+  width: 30%;
+  font-family: 'Exo 2', sans-serif;
+}
+#StockValueDisplay{
+  width: 20%;
+
+}
+.StockDisplayDiv{
+  top: 65%;
+
+}
+.LiveNews{
+  right: 100%;
+  position: absolute;
+  right: 5%;
+  top: 5%
+
+}
+#mainName{
+  font-family: 'Exo 2', sans-serif;
+
+}
+
+/* Button hover */
+
+.button {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.buttonHower:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+/* filter for portfolio*/
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+/* -------------------------------------------------*/
+
+
+
+/* Filter II*/
+
+.FilterDIV{
+  width: 60%;
+}
+.FilterDIVII{
+  width: 80%;
+}
+.FilterDIVIII{
+  width: 30%
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#myInputII {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTableII {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTableII th, #myTableII td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTableII tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTableII tr.header, #myTableII tr:hover {
+  background-color: #f1f1f1;
+}
