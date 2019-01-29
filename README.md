@@ -2,7 +2,9 @@
 Website for finding  stocks and what to buy. This website was created for my webserver programing corse.
 We can help you choose what stock to buy.
 
-#### This was previously a private project but know public was built in 2017-2018
+#### This was previously a private project but know public
+
+project was built in 2017-2018
 
 #### Be aware that I have not uploaded the data base 
 
