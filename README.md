@@ -30,6 +30,8 @@ The stock predictions are made form machine learning AI. I have used quandl (www
 
 ![alt text](img/UserDashBoard.png)
 
+Value of a stock was real historical stock value of that stock. However the investment is just dummy data. 
+
 
 ## What I learned
 
