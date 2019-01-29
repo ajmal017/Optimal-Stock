@@ -2,7 +2,7 @@
 Website for finding  stocks and what to buy. This website was created for my webserver programing corse.
 We can help you choose what stock to buy.
 
-#### TThis was previously a private project but know public was built in 2017-2018
+#### This was previously a private project but know public was built in 2017-2018
 
 #### Be aware that I have not uploaded the data base 
 
@@ -15,7 +15,12 @@ We offer tips on what stock to buy soe that you are able to maximise your profit
 
 The stock predictions are made form machine learning AI. I have used quandl (www.quandl.com) for getting historical stock data.
 
+## Index page
+
 ![alt text](img/Optimal_Stock.png)
+
+## User page
+
 ![alt text](img/UserDashBoard.png)
 
 ## What I learned
