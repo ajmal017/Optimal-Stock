@@ -2,6 +2,8 @@
 Website for finding  stocks and what to buy. This website was created for my webserver programing corse.
 We can help you choose what stock to buy.
 
+#### This was prevesly a privte project but know pulbic, was built in 2017-2018
+
 #### Be aware that I have not uploaded the data base 
 
 The way we choose stock is through machine learning.
