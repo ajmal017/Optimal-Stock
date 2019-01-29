@@ -8,7 +8,7 @@ from datetime import date, timedelta
 
 #Get date of yesterday
 #timeRef = 3
-yesterdayDate = date.today() - timedelta(2)
+yesterdayDate = date.today() - timedelta(4)
 TodayDate = (time.strftime("%Y-%m-%d"))
 
 #Array of London Metal Exchange

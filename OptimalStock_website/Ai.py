@@ -24,7 +24,7 @@ df = df[['Adj. Close','HL_PCT','PCT_change','Adj. Volume']]
 forecast_col = 'Adj. Close'
 df.fillna(-99999, inplace=True)
 forecast_out = int(math.ceil(0.009*len(df))) #change 0.01 to 0.001 to tomorrw etc
-print(forecast_out) # forecast
+#print(forecast_out) # forecast
 
 
 df['label'] = df[forecast_col].shift(-forecast_out)
@@ -43,36 +43,30 @@ Y = np.array(df['label'])
 Y = np.array(df['label'])
 
 X_train, X_test, Y_train, Y_test = cross_validation.train_test_split(X, Y, test_size=0.2) # shuffles them upp
-print("Train")
-print(X_train)
+#print("Train")
+#print(X_train)
 
 #X = feture but Y = label; not graf
 #classefire
 clf = LinearRegression(n_jobs=-1) #cahnge algortim :  : LinearRegression() := svm.SVR(kernal = 'poly')
 clf.fit(X_train, Y_train)
 accuracy = clf.score(X_test, Y_test)
-print(accuracy) #% accuracy shift 1%
+#print(accuracy) #% accuracy shift 1%
 
 forecast_set = clf.predict(X_lately) # pass array to predict per value in that array ; core
-print(forecast_set, accuracy, forecast_out)
+#print(forecast_set, accuracy, forecast_out)
+print(forecast_set)
 df['forecast'] = np.nan #nan list of numbers
 
-#matplotlib stuff
-last_date = df.iloc[-1].name
-last_unix = last_date.timestamp()
-one_day = 86400
-next_unix = last_unix + one_day
 
-#Iterating thorue the forecast set and setting them to dataframe. Making the futre fetures not a numbers
-#or dates on graf relating to data
-for i in forecast_set:
-    next_date = datetime.datetime.fromtimestamp(next_unix)
-    next_unix += one_day
-    df.loc[next_date] = [np.nan for _ in range(len(df.columns)-1)] + [i] #loc getting index of data frame or make a new index
+#write to middleMan.txt but for AI data
+f = open('StockDataFile.txt', 'w+')
+for item in forecast_set:
+    dfData = pd.DataFrame(item)
+    pdfData = dfData.values
+    dfData=dfData[0]
+    dfData=dfData[0]
+    finalDataString = (str(dfData))
 
-df['Adj. Close'].plot()
-df['forecast'].plot()
-plt.legend(loc=4)
-plt.xlabel('Date')
-plt.ylabel('Price')
-plt.show()
+    f.write(finalDataString)
+f.close()

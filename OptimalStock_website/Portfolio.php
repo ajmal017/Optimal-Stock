@@ -64,8 +64,7 @@ if (isset($_SESSION['login'])) {
       <!-- news widnow -->
       <div class="LiveNews">
         <h4 class="breadTextHeadLine">Business news. <b>(LIVE)</b></h4>
-        <iframe width="360" height="215" src="https://www.youtube.com/embed/Ga3maNZ0x0w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-        </iframe>
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/dp8PhLsUcFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <!-- refresh button -->
         <br>

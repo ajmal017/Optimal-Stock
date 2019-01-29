@@ -37,55 +37,27 @@ if (isset($_SESSION['login'])) {
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Mon', 28, 38, 45 1071.56773732],
-      ['Tue', 1089.63114208, 38, 55, 66],
-      ['Wed', 1109.41516552, 55, 77, 80],
-      ['Thu', 1112.55013356, 77, 66, 50],
-      ['Fri', 1120.13070431, 66, 22, 15],
-      // Treat first row as data as well.
-    ], true);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales'],
+          ['2004',  1000],
+          ['2005',  1170],
+          ['2006',  660],
+          ['2007',  1030]
+        ]);
 
-    /*
+        var options = {
+          title: 'Company stock 1',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
 
-    ['Mon', 1129.39319012, 28, 38, 45],
-    ['Tue', 1127.76593418, 38, 55, 66],
-    ['Wed', 1146.79301035, 55, 77, 80],
-    ['Thu', 1162.34453615, 77, 66, 50],
-    ['Fri', 1134.94373258, 66, 22, 15],
-    ['Mon', 1120.93437755, 28, 38, 45],
-    ['Tue', 1087.15030742, 38, 55, 66],
-    ['Wed', 1100.39985025, 55, 77, 80],
-    ['Thu', 1111.70166399, 77, 66, 50],
-    ['Fri', 1119.66924452, 66, 22, 15],
-    ['Mon', 1132.46304084, 28, 38, 45],
-    ['Tue', 1147.636393, 38, 55, 66],
-    ['Wed', 1178.78763904, 55, 77, 80],
-    ['Thu', 1183.83220331, 77, 66, 50],
-    ['Fri', 1156.39337461, 66, 22, 15],
-    ['Mon', 1166.66737744, 28, 38, 45],
-    ['Tue', 1168.53649395, 38, 55, 66],
-    ['Wed', 1152.08752619, 55, 77, 80],
-    ['Thu', 1117.47358077, 77, 66, 50],
-    ['Fri', 1113.46780555, 66, 22, 15],
-    ['Mon', 1110.80936149, 28, 38, 45],
-    ['Tue', 1068.98947321, 38, 55, 66],
-    ['Wed', 1040.74605045, 55, 77, 80],
-    ['Thu', 1071.37798707, 77, 66, 50],
-    ['Fri', 1020.57590867, 66, 22, 15]
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-    */
-
-    var options = {
-      legend:'none'
-    };
-
-    var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div'));
-
-    chart.draw(data, options);
-  }
+        chart.draw(data, options);
+      }
     </script>
+
 
 
   </head>
@@ -98,8 +70,16 @@ if (isset($_SESSION['login'])) {
       <h3>AI repport</h3>
 
       <br>
+      <?php
 
-      <div id="chart_div" style="width: 1000px; height: 300px;"></div>
+      $YesterDayDate = date('d.m.Y',strtotime("-1 days"));
+      echo $YesterDayDate;
+
+      ?>
+
+      <br>
+
+      <div id="curve_chart" style="width: 900px; height: 500px"></div>
 
       <br>
       <br>
