@@ -2,6 +2,10 @@
 Website for finding  stocks and what to buy. This website was created for my webserver programing corse.
 We can help you choose what stock to buy.
 
+#### TThis was previously a private project but know public was built in 2017-2018
+
+#### Be aware that I have not uploaded the data base 
+
 The way we choose stock is through machine learning.
 
 This means that we does not let you buy or sell stock ate Optimal Stock. To day people don't trade on the stock market. To day computer makes the trades. But for the normal day Joe Blow that is not able to have the machines to trade for theme and to make predictions.
@@ -11,9 +15,10 @@ We offer tips on what stock to buy soe that you are able to maximise your profit
 
 The stock predictions are made form machine learning AI. I have used quandl (www.quandl.com) for getting historical stock data.
 
+![alt text](Optimal_Stock.png)
 
 ## What I learned
 
-- [x] PHP
+- [x] PHP and basic backend dev
 - [x] Python 
 - [x] basics in : panda, quandel numpy, sklearn, matplotlib  
