@@ -15,7 +15,8 @@ We offer tips on what stock to buy soe that you are able to maximise your profit
 
 The stock predictions are made form machine learning AI. I have used quandl (www.quandl.com) for getting historical stock data.
 
-![alt text](Optimal_Stock.png)
+![alt text](img/Optimal_Stock.png)
+![alt text](img/UserDashBoard.png)
 
 ## What I learned
 
